@@ -21,8 +21,9 @@ h2 {
   margin: 5px;
 }
 
-#cardDeck {
+#cardDeck:hover {
 color:  #ffd700;
 background-color: #2EB6C3;
 }
+
 
