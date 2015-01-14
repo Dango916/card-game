@@ -21,7 +21,7 @@ h2 {
   margin: 5px;
 }
 
-#container:hover {
+#error:hover {
 color:  #ffd700;
 background-color: #2EB6C3;
 }
