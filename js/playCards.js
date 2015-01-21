@@ -23,7 +23,7 @@ $(document).ready(function(){
     var doDrawCard = function(){
         var c = cardDeck.draw();
         if(!c){
-            showError('no more cards');
+            showError('You are out of Cards!');
             return;
         }
         hand[hand.length] = c;
