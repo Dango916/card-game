@@ -44,7 +44,7 @@ $(document).ready(function(){
             showError('You are out of Cards!');
             return;
         }
-        hand1[hand.length] = c;
+        hand[hand.length] = c;
         cardDeck.spread();
         showHand();
     }
