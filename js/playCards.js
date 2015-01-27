@@ -1,6 +1,8 @@
 $(document).ready(function(){
     var cardDeck = $("#cardDeck").playingCards();
     cardDeck.spread(); // show it
+    var cardDeck = $("#cardDeck1").playingCards();
+    cardDeck.spread1(); // show it
 
     var hand = [];
     var hand1 = [];
