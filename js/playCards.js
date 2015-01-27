@@ -17,7 +17,7 @@ $(document).ready(function(){
             el.append(hand[i].getHTML());
         }
     }
-        var showHand = function(){
+        var showHand1 = function(){
         var el = $('#theirHand')
         el.html('');
         for(var i=0;i<hand.length;i++){
@@ -71,9 +71,9 @@ $(document).ready(function(){
             return;
         }
         var c = hand.pop();
-        showHand();
-        cardDeck.addCard(c);
-        cardDeck.spread();
+        showHand1();
+        cardDeck.addCard1(c);
+        cardDeck.spread1();
     });
      $('#addCard1').click(function(){
         if(!hand.length){
