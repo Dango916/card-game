@@ -39,14 +39,16 @@ $(document).ready(function(){
         showHand();
     }
     var doDrawCard1 = function(){
-        var c = cardDeck.draw();
+        var c = cardDeck1.draw();
         if(!c){
             showError('You are out of Cards!');
             return;
         }
-        hand1[hand1.length] = c;
+        hand1[hand.length] = c;
         cardDeck.spread();
         showHand();
+    }
+
     }
     var doOrderByRank = function(){
         cardDeck.orderByRank();
@@ -64,6 +66,26 @@ $(document).ready(function(){
         doDrawCard();
     });
     $('#addCard').click(function(){
+        if(!hand.length){
+            showError('your hand is empty');
+            return;
+        }
+        var c = hand.pop();
+        showHand();
+        cardDeck.addCard(c);
+        cardDeck.spread();
+    });
+     $('#addCard1').click(function(){
+        if(!hand.length){
+            showError('your hand is empty');
+            return;
+        }
+        var c = hand.pop();
+        showHand();
+        cardDeck.addCard(c);
+        cardDeck.spread();
+    });
+    $('#addCard1').click(function(){
         if(!hand.length){
             showError('your hand is empty');
             return;
