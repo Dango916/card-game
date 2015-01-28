@@ -16,15 +16,10 @@ $(document).ready(function(){
         var el = $('#yourHand')
         el.html('');
         for(var i=0;i<hand.length;i++){
-            el.append(hand[i].getHTML());
-        }
-    }
-        var showHand1 = function(){
-        var el = $('#theirHand')
-        el.html('');
-        for(var i=0;i<hand.length;i++){
-            el.append(hand[i].getHTML());
-        }
+            el.append(hand[i].getHTML());}
+        el = $('#theirHand')
+        for(var i=0;i<hand1.length;i++){
+            el.append(hand1[i].getHTML());}    
     }
     var doShuffle = function(){
         cardDeck.shuffle();
