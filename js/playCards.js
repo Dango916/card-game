@@ -1,8 +1,7 @@
 $(document).ready(function(){
     var cardDeck = $("#cardDeck").playingCards();
     cardDeck.spread(); // show it
-    var cardDeck = $("#cardDeck1").playingCards();
-    cardDeck.spread1(); // show it
+
 
     var hand = [];
     var hand1 = [];
@@ -13,11 +12,11 @@ $(document).ready(function(){
         },3000);
     }
     var showHand = function(){
-        var el = $('#yourHand')
+        var el = $('#yourHand');
         el.html('');
         for(var i=0;i<hand.length;i++){
             el.append(hand[i].getHTML());}
-        el = $('#theirHand')
+        el = $('#theirHand');
         for(var i=0;i<hand1.length;i++){
             el.append(hand1[i].getHTML());}    
     }
@@ -41,7 +40,7 @@ $(document).ready(function(){
             showError('You are out of Cards!');
             return;
         }
-        hand[hand.length] = c;
+        hand1[hand1.length] = c;
         cardDeck.spread();
         showHand();
     }
