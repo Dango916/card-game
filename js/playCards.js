@@ -72,11 +72,11 @@ $(document).ready(function(){
         cardDeck.spread1();
     });
      $('#addCard1').click(function(){
-        if(!hand.length){
+        if(!hand1.length){
             showError('your hand is empty');
             return;
         }
-        var c = hand.pop();
+        var c = hand1.pop();
         showHand();
         cardDeck.addCard(c);
         cardDeck.spread();
