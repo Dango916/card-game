@@ -36,7 +36,7 @@ $(document).ready(function(){
         showHand();
     }
     var doDrawCard1 = function(){
-        var c = cardDeck1.draw();
+        var c = cardDeck.draw();
         if(!c){
             showError('You are out of Cards!');
             return;
