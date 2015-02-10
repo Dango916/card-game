@@ -68,9 +68,9 @@ $(document).ready(function(){
             return;
         }
         var c = hand.pop();
-        showHand1();
-        cardDeck.addCard1(c);
-        cardDeck.spread1();
+        showHand();
+        cardDeck.addCard(c);
+        cardDeck.spread();
     });
      $('#addCard1').click(function(){
         if(!hand1.length){
