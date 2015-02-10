@@ -16,7 +16,7 @@ $(document).ready(function(){
         el.html('');
         for(var i=0;i<hand.length;i++){
             el.append(hand[i].getHTML());}
-        el = $('#theirHand');
+        el = $('#Comphand');
         for(var i=0;i<hand1.length;i++){
             el.append(hand1[i].getHTML());}    
     }
