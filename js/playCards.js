@@ -46,7 +46,6 @@ $(document).ready(function(){
         showHand();
     }
 
-    }
     var doOrderByRank = function(){
         cardDeck.orderByRank();
         cardDeck.spread(); // update card table
