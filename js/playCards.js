@@ -45,7 +45,7 @@ $(document).ready(function(){
         cardDeck.spread();
         showHand();
     }
-    var deal = function(){
+    var doDeal = function(){
         doDrawCard1(7);
         doDrawCard(7);
         cardDeck.spead();
@@ -58,6 +58,7 @@ $(document).ready(function(){
         cardDeck.orderBySuit();
         cardDeck.spread(); // update card table
     }
+    $('#deal').click(doDeal);
     $('#shuffler').click(doShuffle);
     $('#draw').click(doDrawCard);
     $('#draw1').click(doDrawCard1);
