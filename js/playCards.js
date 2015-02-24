@@ -46,9 +46,10 @@ $(document).ready(function(){
         showHand();
     }
     var doDeal = function(){
-        doDrawCard1(7);
-        doDrawCard(7);
-        cardDeck.spead();
+      for(var i=0;i<7;i++){
+       doDrawCard1();
+        doDrawCard();
+        cardDeck.spead();}
     }
     var doOrderByRank = function(){
         cardDeck.orderByRank();
