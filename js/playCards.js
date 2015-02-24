@@ -49,7 +49,8 @@ $(document).ready(function(){
       for(var i=0;i<7;i++){
        doDrawCard1();
         doDrawCard();
-        cardDeck.spead();}
+        cardDeck.spread();
+        }
     }
     var doOrderByRank = function(){
         cardDeck.orderByRank();
