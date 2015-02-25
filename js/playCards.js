@@ -1,5 +1,6 @@
 $(document).ready(function(){
     var cardDeck = $("#cardDeck").playingCards();
+    var Discard = $("#Discard").discardPile(); //My Elite code!
     cardDeck.spread(); // show it
 
 
@@ -20,6 +21,10 @@ $(document).ready(function(){
         el.html('');
         for(var i=0;i<hand1.length;i++){
             el.append(hand1[i].getHTML());}    
+              el = $('#Discard');
+        el.html('');
+        for(var i=0;i<hand1.length;i++){
+            el.append(hand1[i].getHTML());}  
     }
     var doShuffle = function(){
         cardDeck.shuffle();
