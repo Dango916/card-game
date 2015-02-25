@@ -40,6 +40,40 @@ if (Array.indexOf === undefined) {
       }
     }
   };
+ 
+ // I SHALL BEGIN MY CONQUEST HERE! LET IT BE WRITTE IN STONE/ CODE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  (function (window, document, undefined) {
+  var discardPile = window.discardPile = function (conf) {
+    var c = objExtend(discardPile.defaults, conf);
+    if (! (this instanceof discardPile)) {
+      c.el = $(this);
+      return new discardPile(c);
+    }
+    this.conf = c;
+    this.init();
+    if (this.conf.startShuffled) {
+      this.shuffle(5);
+    }
+    return this;
+  };
+
+
+  discardPile.prototype.init = function() {
+    this.cards = [];
+    var o = this.conf, l, i, s, r, j;
+    for (i = 0; i < o.decks; i++) {
+      for (s in o.suits) {
+        for (r in o.ranks) {
+          l = this.cards.length;
+          this.cards[l] = new discardPile.card(r, o.ranks[r], s, o.suits[s]);
+        }
+      }
+      for (j = 0; j < o.jokers; j++) {
+        l = this.cards.length;
+        this.cards[l] = new discardPile.card("N", o.jokerText, (j % 2) + 1, '');
+      }
+    }
+  };
 
   playingCards.prototype.draw = function() {
     return this.cards.length > 0 ? this.cards.pop() : null;
