@@ -1,6 +1,5 @@
 $(document).ready(function(){
     var cardDeck = $("#cardDeck").playingCards();
-    var Discard = $("#Discard").discardPile(); //My Elite code!
     cardDeck.spread(); // show it
 
 
