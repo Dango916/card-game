@@ -120,7 +120,7 @@ $(document).ready(function(){
             showError('your hand is empty');
             return;
         }
-        var c = hand1.pop();
+        var c = hand.pop();
         showHand();
         hand1[hand1.length] = c;
            showHand();
@@ -130,7 +130,7 @@ $(document).ready(function(){
             showError('your hand is empty');
             return;
         }
-        var c = hand.pop();
+        var c = hand1.pop();
         showHand();
          hand[hand.length] = c;
             showHand();
