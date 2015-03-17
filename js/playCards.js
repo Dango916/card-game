@@ -110,7 +110,7 @@ $(document).ready(function(){
             showError('your hand is empty');
             return;
         }
-        var c = hand.pop();
+        var c = hand1.pop();
         showHand();
         cardDeck.addCard(c);
         cardDeck.spread();
