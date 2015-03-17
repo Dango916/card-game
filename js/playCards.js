@@ -39,8 +39,30 @@ $(document).ready(function(){
         cardDeck.spread();
         showHand();
     }
+    
     var doDrawCard1 = function(){
         var c = cardDeck.draw();
+        if(!c){
+            showError('You are out of Cards!');
+            return;
+        }
+        hand1[hand1.length] = c;
+        cardDeck.spread();
+        showHand();
+    }
+    var doDrawCard3 = function(){
+        var c = CompHand.draw();
+        if(!c){
+            showError('You are out of Cards!');
+            return;
+        }
+        hand[hand.length] = c;
+        cardDeck.spread();
+        showHand();
+    }
+    
+     var doDrawCard4 = function(){
+        var c = YourHand.draw();
         if(!c){
             showError('You are out of Cards!');
             return;
