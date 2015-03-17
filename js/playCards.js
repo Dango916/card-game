@@ -50,24 +50,24 @@ $(document).ready(function(){
         cardDeck.spread();
         showHand();
     }
-    var doDrawCard3 = function(){
+    var doDrawCard2 = function(){
         var c = CompHand.draw();
         if(!c){
             showError('You are out of Cards!');
             return;
         }
-        hand[hand.length] = c;
+        hand1[hand1.length] = c;
         cardDeck.spread();
         showHand();
     }
     
-     var doDrawCard4 = function(){
+     var doDrawCard3 = function(){
         var c = YourHand.draw();
         if(!c){
             showError('You are out of Cards!');
             return;
         }
-        hand1[hand1.length] = c;
+        hand[hand.length] = c;
         cardDeck.spread();
         showHand();
     }
@@ -113,6 +113,25 @@ $(document).ready(function(){
         showHand();
         cardDeck.addCard(c);
         cardDeck.spread();
+    });
+    $('#addCard2').click(function(){
+        if(!hand.length){
+            showError('your hand is empty');
+            return;
+        }
+        var c = hand.pop();
+        showHand();
+        Hand1[Hand1.length] = c;
+    });
+    $('#addCard3').click(function(){
+        if(!hand1.length){
+            showError('your hand is empty');
+            return;
+        }
+        var c = hand1.pop();
+        showHand();
+         Hand[Hand.length] = c;
+        
     });
    
     $('#orderByRank').click(doOrderByRank);
