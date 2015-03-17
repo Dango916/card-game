@@ -120,8 +120,8 @@ $(document).ready(function(){
             return;
         }
         var c = hand.pop();
-        showHand();
-        Hand1[Hand1.length] = c;
+        showhand();
+        hand1[hand1.length] = c;
            showHand();
     });
     $('#addCard3').click(function(){
@@ -130,8 +130,8 @@ $(document).ready(function(){
             return;
         }
         var c = hand1.pop();
-        showHand();
-         Hand[Hand.length] = c;
+        showhand();
+         hand[hand.length] = c;
             showHand();
         
     });
