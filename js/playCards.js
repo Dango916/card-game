@@ -104,12 +104,13 @@ $(document).ready(function(){
         cardDeck.addCard(c);
         cardDeck.spread();
     });
+  
      $('#addCard1').click(function(){
         if(!hand1.length){
             showError('your hand is empty');
             return;
         }
-        var c = hand1.pop();
+        var c = hand.pop();
         showHand();
         cardDeck.addCard(c);
         cardDeck.spread();
