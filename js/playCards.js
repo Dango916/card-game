@@ -122,6 +122,7 @@ $(document).ready(function(){
         var c = hand.pop();
         showHand();
         Hand1[Hand1.length] = c;
+           showHand();
     });
     $('#addCard3').click(function(){
         if(!hand1.length){
@@ -131,6 +132,7 @@ $(document).ready(function(){
         var c = hand1.pop();
         showHand();
          Hand[Hand.length] = c;
+            showHand();
         
     });
    
