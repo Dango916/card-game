@@ -116,7 +116,7 @@ $(document).ready(function(){
         cardDeck.spread();
     });
     
-     $('#addCard2').click(function(){
+     $('#takeCard').click(function(){
         if(!hand1.length){
             showError('your hand is empty');
             return;
