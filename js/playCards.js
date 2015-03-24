@@ -115,17 +115,8 @@ $(document).ready(function(){
         cardDeck.addCard(c);
         cardDeck.spread();
     });
-    $('#addCard3').click(function(){
-        if(!hand.length){
-            showError('your hand is empty');
-            return;
-        }
-        var c = hand.pop();
-        showHand();
-        hand1[hand1.length] = c;
-           showHand();
-    });
-    $('#addCard2').click(function(){
+    
+     $('#addCard2').click(function(){
         if(!hand1.length){
             showError('your hand is empty');
             return;
@@ -136,6 +127,18 @@ $(document).ready(function(){
             showHand();
         
     });
+    
+    $('#addCard3').click(function(){
+        if(!hand.length){
+            showError('your hand is empty');
+            return;
+        }
+        var c = hand.pop();
+        showHand();
+        hand1[hand1.length] = c;
+           showHand();
+    });
+   
    
     $('#orderByRank').click(doOrderByRank);
     $('#orderBySuit').click(doOrderBySuit);
