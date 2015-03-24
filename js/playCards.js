@@ -50,17 +50,7 @@ $(document).ready(function(){
         cardDeck.spread();
         showHand();
     }
-    var doDrawCard2 = function(){
-        var c = CompHand.draw();
-        if(!c){
-            showError('You are out of Cards!');
-            return;
-        }
-        hand1[hand1.length] = c;
-        cardDeck.spread();
-        showHand();
-    }
-    
+
     var doDeal = function(){
       for(var i=0;i<7;i++){
        doDrawCard1();
