@@ -61,16 +61,6 @@ $(document).ready(function(){
         showHand();
     }
     
-     var doDrawCard3 = function(){
-        var c = YourHand.draw();
-        if(!c){
-            showError('You are out of Cards!');
-            return;
-        }
-        hand[hand.length] = c;
-        cardDeck.spread();
-        showHand();
-    }
     var doDeal = function(){
       for(var i=0;i<7;i++){
        doDrawCard1();
