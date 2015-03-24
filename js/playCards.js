@@ -128,7 +128,7 @@ $(document).ready(function(){
         
     });
     
-    $('#addCard3').click(function(){
+    $('#takeCard1').click(function(){
         if(!hand.length){
             showError('your hand is empty');
             return;
